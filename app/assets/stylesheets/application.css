@@ -276,6 +276,11 @@ textarea {
   display: inline-block;
 }
 
+.dropdown_1 {
+  right: -75%;
+  position: relative;
+}
+
 .dropdown-content {
   font-weight: normal;
   display: none;
