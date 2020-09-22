@@ -148,8 +148,16 @@
   position: relative;
 }
 
+.article h2 {
+  font-size: 16px;
+}
+
 .article_title {
   font-size: 22px;
+}
+
+.article_comment {
+  padding: 16px 0;
 }
 
 .article_detail {
@@ -195,6 +203,16 @@
   width: 100%;
   text-align: center;
   color: white;
+  padding: 16px 0;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: solid 1px #8AC542;
+  width: 100%;
+  text-align: center;
+  color: #8AC542;
   padding: 16px 0;
   font-weight: bold;
 }
@@ -274,11 +292,6 @@ textarea {
 .dropdown {
   position: relative;
   display: inline-block;
-}
-
-.dropdown_1 {
-  right: -75%;
-  position: relative;
 }
 
 .dropdown-content {
