@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   end
 
   resource :profile, only: [:show, :edit, :create, :update]
+  resources :favorites, only:[:index]
 
 end
