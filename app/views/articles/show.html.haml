@@ -4,10 +4,11 @@
       = image_tag @article.eyecatch
   %h1.artocle_title= @article.title
   .article_detail
-    = image_tag @article.user.avatar_image
+    = link_to account_path(@article.user) do
+      = image_tag @article.user.avatar_image
     %div
       %p= @article.author_name
-      %p= @article.display_create_at
+      %p= @article.display_created_at
   - if user_signed_in? && current_user.has_written?(@article)
     .article_detail_actions
       .dropdown
