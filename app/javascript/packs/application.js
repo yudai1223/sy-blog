@@ -7,7 +7,6 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
-
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
@@ -40,7 +39,7 @@ document.addEventListener('DOMContentLoaded',() => {
         const hasLiked = response.data.hasLiked
         handleHeartDisplay(hasLiked)
       })
-
+      
       $('.inactive-heart ').on('click',() => {
       axios.post('/aticles/${articleId}/like')
       .then((response) => {
@@ -51,7 +50,7 @@ document.addEventListener('DOMContentLoaded',() => {
         })
          .catch((e) => {
           window.alert('Error')
-            console.log(e)  
+            console.log(e)
              })
       })
 
