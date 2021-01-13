@@ -16,7 +16,7 @@
   color: white;
 }
 
-.header_loginBtn {
+.header a.loginBtn {
   background-color: #f1f5f7;
   height: 40px;
   border-radius: 8px;
