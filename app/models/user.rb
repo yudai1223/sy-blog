@@ -74,5 +74,5 @@ def get_user_id(user)
   else
     user
   end
-end
+  end
 end
