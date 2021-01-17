@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded',() => {
     const dataset = $('#article-show').data()
     const articleId = dataset.articleId
 
+    debugger
     axios.get(`/articles/${articleId}/like`)
       .then((response) => {
         const hasLiked = response.data.hasLiked
@@ -46,8 +47,11 @@ document.addEventListener('DOMContentLoaded',() => {
           if (response.data.status === 'ok') {
               $('.active-heart').removeClass('hidden')
               $('.inactive-heart').addClass('hidden')
+        
          }
+        
         })
+        
          .catch((e) => {
           window.alert('Error')
             console.log(e)
