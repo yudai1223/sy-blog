@@ -21,17 +21,14 @@
   - if user_signed_in?
     .article_heart.hidden.active-heart
       = image_tag 'heart-active.svg'
-
     .article_heart.hidden.inactive-heart
       = image_tag 'heart.svg'
-      
-
 .article
   %h2 コメント一覧
-  - @comments.each do |comment|
-    .article_comment
-      %p= comment.content
+  .comments-container
 .container
   = link_to new_article_comment_path(@article) do
     .btn-secondary
       コメント追加
+
+      = javascript_pack_tag 'article'
