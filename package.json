@@ -24,6 +24,6 @@
     "presets": ["./node_modules/@rails/webpacker/package/babel/preset.js"]
   },
   "browserslist": [
-    "iOS >= 9"
+    "defaults"
   ]
 }
