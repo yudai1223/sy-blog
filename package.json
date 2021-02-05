@@ -2,10 +2,10 @@
   "name": "sy_blog_app",
   "private": true,
   "dependencies": {
-    "@rails/actioncable": "^6.1.1",
-    "@rails/actiontext": "^6.1.1",
-    "@rails/activestorage": "^6.1.1",
-    "@rails/ujs": "^6.1.1",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/actiontext": "^6.0.3-2",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
     "axios": "^0.21.1",
     "jquery": "^3.5.1",
@@ -15,7 +15,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.1"
   },
   "babel": {
     "presets": [
